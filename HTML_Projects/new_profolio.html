@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Times I'll Never Forget </title>
+		<link rel="stylesheet" href= "myStyles.css">
+		<button onclick="myFunction()">Try it</button>
+		<script> 
+			function myFunction() {
+				alert("No worries! Just wanted to warn you that you are about to enter a website about Evelyn and her intrests and projects made with Girls Who Code!");
+			}
+		</script>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>Good Times, Good Times</h1>
+</header>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(41.774832,-88.370721);
+var myTrainStation=new google.maps.LatLng(41.761256, -88.308438);
+var myHighSchool=new google.maps.LatLng(41.764868, -88.345973);
+var myMiddleSchool=new google.maps.LatLng(41.767292, -88.344868);
+var myElementarySchool=new google.maps.LatLng(41.773934, -88.362839);
+var myBdubs=new google.maps.LatLng(41.785640, -88.377478);
+var myStarbucks=new google.maps.LatLng(41.785899, -88.376318);
+var myWendys=new google.maps.LatLng(41.782134, -88.376055);
+var myChipotle=new google.maps.LatLng(41.786196, -88.376248);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:5,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+});
+ var marker2=new google.maps.Marker({
+	position:myTrainStation,
+});
+var marker3=new google.maps.Marker({
+	position:myHighSchool,
+});
+var marker4=new google.maps.Marker({
+	position:myMiddleSchool,
+});
+var marker5=new google.maps.Marker({
+	position:myElementarySchool,
+});
+var marker6=new google.maps.Marker({
+	position:myBdubs,
+});
+var marker7=new google.maps.Marker({
+	position:myStarbucks,
+});
+var marker8=new google.maps.Marker({
+	position:myWendys,
+});
+var marker9=new google.maps.Marker({
+	position:myChipotle,
+});
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+  
+<nav>
+  <ul>
+    <li><a href="html_Scratch.asp">Scratch</a></li>
+    <li><a href="html_Python.asp">Python</a></li>
+    <li><a href="html_Pygame.asp">Pygame</a></li>
+	<li><a href="html_C++.asp">C++ (Arduino)</a></li>
+	<li><a href="html_MoreAboutMe.asp"> More About Me</a></li>
+  </ul>
+</nav>
+
+<article>
+	<h2>About Me</h2>
+	<p> My name is Evelyn Torres. Some people call me Ev or Evie. I am 17 years old and I am from Aurora, Illinois. I am a middle child. I have an older brother, Erik, who is a junior at U of I studying electrical engineering and I have a younger sister, Eilanie, who is going into 6th grade. She plays the saxophone, volleyball, and softball. </p>
+	<img src = "IMG_6325.JPG">
+	<p> I will be a senior this year at West Aurora High School. I run cross country and track at West, I play the euphonium in band, I will be the National Honors Society President this year, and I am the 2016-2017 Group Commander for our Air Force Junior Reserve Officer Training Corps program at West. </p>
+	<img src = "IMG_5341.JPG">
+	<p> I am also the Unarmed Exhibtion Commander for our drill team. Along with Exhibtion, I am on the Varsity Unarmed Infantry Drill Regulation team and I am right guard on the Varsity Girls Color Guard. I love hanging out with friends and just living life. So, yeah that's just a little bit about me! </p>
+	<img src = "IMG_4573.PNG">
+	<h3> Projects in Girls Who Code </h3>
+	<p> Now that I have introduced myself, I would like to show you some of the things we have created through Girls Who Code. Click on any of the links to the left to begin looking through my projects. </p>
+</article> 
+
+<article>
+	<h4> Evelyn's most visited places in A-Town </h4>
+
+</div>
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>
+

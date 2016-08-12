@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html>
+<head> 
+<link rel="stylesheet" type="text/css" herf="stylesheet.css">
+<title>W3.CSS</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-teal.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<style>
+
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+
+.w3-navbar a{padding-top:12px !important;padding-bottom:12px !important;}
+
+</style>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: mediumaquamarine;
+}
+
+li.dropdown {
+    display: inline-block;
+	
+	
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+</style>
+</head>
+<body background="wood1.png">
+
+
+<!-- Navbar -->
+
+<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;" >
+
+  <li class="w3-opennav w3-right w3-hide-large">
+
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+
+  </li>
+
+  <img src="ioasis.png" align="left" width="75px">
+
+  <li class="w3-hide-small"><a href="#" class="w3-hover-gray">Home</a></li>
+
+  <li class="w3-hide-small"><a href="http://ioasislife.boards.net/" class="w3-hover-white">Forum</a></li>
+
+  <li class="w3-hide-small"><a href="#" class="w3-hover-white">Not Alone</a></li>
+  
+   <li class="w3-hide-small"><a href="#" class="w3-hover-white">Learn More</a></li>
+   
+    <li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Help</a> 
+		<div class="dropdown-content" id="myDropdown">
+			<a href="#">Breathing Exercises</a>
+			<a href="#">Printable Coloring Stress Relievers</a>
+			<a href="#">Tips</a>
+		</div>
+	</li>
+
+</ul>
+
+<!-- Sidenav -->
+
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:51px;" id="mySidenav">
+
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">
+
+    <i class="fa fa-remove"></i>
+
+  </a>
+
+  <h4><b>Contact Us</b></h4>
+
+  <a href="#" class="w3-hover-black">Katie Gutierrez</a>
+  <form action="mailto:k4.gutierrez@gmail.com"method="get">
+  <inout name="subject"type="hidden"valu="Message Title">
+  <a href="#" class="w3-hover-black">Evelyn Torres</a>
+  <p>evelyntorres2798@gmail.com</p>
+  <a href="#" class="w3-hover-black">Sajara Magdaleno</a>
+  <p>sajara.magdaleno@gmail.com</p>
+  <a href="#" class="w3-hover-black">Thailyn Gonzalez</a>
+  <p>tgon.516@gmail.com</p>
+</nav>
+
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- Overlay effect when opening sidenav on small screens -->
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+
+<div class="w3-main" style="margin-left:250px">
+
+
+  <div class="w3-row w3-padding-64">
+
+    <div class="w3-twothird w3-container">
+ 
+<iframe width="800" height="315" src="https://www.youtube.com/embed/3uD5gWepXYw" frameborder="0" allowfullscreen></iframe>
+
+      <h1 class="w3-text-teal">About OasisLife</h1>
+
+      <p>Welcome to OasisLife! 
+   This website is designed to help people find peace and control in their lives. 
+   We don't want this site to only be a get help site, we want people to able to talk about their struggles in their life and find people who have or going through the same thing as them. 
+   We want to let you guys know that you're not alone and there will always be people on OasisLife to help you through the tough times.
+   This is a safe place and you guys can be you true selves here. 
+   You don't need to always talk about your struggles, you can talk about anything you're  interested in.  :) </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="w3-row">
+
+    <div class="w3-twothird w3-container">
+
+      <h2 class="w3-text-teal">About Us</h2>
+   
+   <h4> Katelyn Gutierrez </h4>
+
+      <p>Hi I'm Katelyn but i go by katie.
+  I am 17 years old who lives in Illinois.
+  I am currently in a program called Girls Who Code and we learned many different programing langueages and ley me tell you this I fell in love with this summer program it has been an amazing experience.
+  Me personally I decided to do this webaite with my teammates because I've personally have dealt with anxiety, depression, panic attacks(which are just terrible).
+  I wanted to creat a website people can come here and just feel safe, connect with others who are struggling with the same problems and ontop of that this a space where I want everyone to feel safe & free to be themselves.
+
+  
+  <h4> Evelyn Torres </h4>
+  
+  <p> I'm Evelyn! You guys can call me Ev or Evie or just Evelyn. I'm 17 going on 18 this October. I'm from Illinois. 
+  I run cross country and track and I'm a JROTC head (that's all I ever talk about, and for those of you who don't know, JROTC is Junior Reserve Officer Training Corps.)
+  I love talking, so I am extremely glad to be here to talk to all of you guys! I have personally never experienced anxiety or depression, but I have friends who have faced it.
+  My friends know that they can talk to me about anything because I'm not one to judge, but rather a person who will try their best to help anyone out when they need someone to talk to.
+  So, I hope you all visiting our page will feel free to contact any of us at any time when you need to talk.</p>
+  
+  <h4> Sajara Magdaleno </h4>
+  <p> I am a 16 year old who lives in Illinois. 
+  I am currently in a program called Girls Who Code and we learned how to code with many different programming languages.
+  My group and I decided to make this website ourselves because we thought it would be nice to see people be able to talk about their feelings.
+  I do have family members who have anxiety and it's hard to see them struggle with it because they have no one they can talk to/ no one there to understand what they are going through. 
+  I hear my parents talking about my cousin (who has anxiety) sometimes, and my parents say that my cousin is overthinking things and that he needs to relax. 
+  I don't think that what they say that he should do will help him because he has tried to 'relax' before, but that doesn't work. 
+  I feel like this website can help people, like my cousin, find some peace. 
+  I also think that this website can teach people, like my parents, things about mental health.</p>
+  
+  <h4> Thailyn Gonzalez </h4>
+  <p>I'm Thailyn Gonzalez, I usually just go by Thai.
+  I'm 16 years old who lives in Illinois.
+  Being in High School there are a lot of stress going on, stress over big tests, extra curriculums, friend drama, relationship drama, etc.
+  I read an article on 15minutes4me.com about stress' affect on teenagers. 
+  They had conducted a study on 4300 stressed out teens, and 61% could handle the stress effectively, the other 39% were diagnosed with depression ranging from mild to severe.
+  And in that 31%, 6% had attempted suicide. 
+  If I have the capability to create something that can help even a couple people from this, why wouldn't I?</p>
+    </div>
+
+ </div>
+
+
+ 
+
+
+  <footer id="myFooter">
+
+
+
+    <div class="w3-container w3-theme-l1">
+
+      <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+    </div>
+
+  </footer>
+
+
+<!-- END MAIN -->
+
+</div>
+
+
+<script>
+
+// Get the Sidenav
+
+var mySidenav = document.getElementById("mySidenav");
+
+
+// Get the DIV with overlay effect
+
+var overlayBg = document.getElementById("myOverlay");
+
+
+// Toggle between showing and hiding the sidenav, and add overlay effect
+
+function w3_open() {
+
+    if (mySidenav.style.display === 'block') {
+
+        mySidenav.style.display = 'none';
+
+        overlayBg.style.display = "none";
+
+    } else {
+
+        mySidenav.style.display = 'block';
+
+        overlayBg.style.display = "block";
+
+    }
+
+}
+
+
+// Close the sidenav with the close button
+
+function w3_close() {
+
+    mySidenav.style.display = "none";
+
+    overlayBg.style.display = "none";
+
+}
+
+</script>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+</body>
+
+</html>

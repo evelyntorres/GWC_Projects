@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+
+
+
+
+
+
+var myCenter=new google.maps.LatLng(41.774832,-88.370721);
+var myTrainStation=new google.maps.LatLng(41.761256, -88.308438);
+var myHighSchool=new google.maps.LatLng(41.764868, -88.345973);
+var myMiddleSchool=new google.maps.LatLng(41.767292, -88.344868);
+var myElementarySchool=new google.maps.LatLng(41.773934, -88.362839);
+var myBdubs=new google.maps.LatLng(41.785640, -88.377478);
+var myStarbucks=new google.maps.LatLng(41.785899, -88.376318);
+var myWendys=new google.maps.LatLng(41.782134, -88.376055);
+var myChipotle=new google.maps.LatLng(41.786196, -88.376248);
+
+
+
+
+
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:5,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+ var mapProp2 = {
+  center:myTrainStation,
+  zoom:5,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  
+  
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var map2=new google.maps.Map(document.getElementById("googleMap"),mapProp2);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+});
+ var marker2=new google.maps.Marker({
+	position:myTrainStation,
+});
+var marker3=new google.maps.Marker({
+	position:myHighSchool,
+});
+var marker4=new google.maps.Marker({
+	position:myMiddleSchool,
+});
+var marker5=new google.maps.Marker({
+	position:myElementarySchool,
+});
+var marker6=new google.maps.Marker({
+	position:myBdubs,
+});
+var marker7=new google.maps.Marker({
+	position:myStarbucks,
+});
+var marker8=new google.maps.Marker({
+	position:myWendys,
+});
+var marker9=new google.maps.Marker({
+	position:myChipotle,
+});
+marker.setMap(map);
+marker2.setMap(map2);
+}
+
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>
